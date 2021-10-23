@@ -4,7 +4,7 @@ services:
     image: postgres
     container_name: postgres
     volumes:
-      - ./docker/postgresql/data:/var/lib/postgresql/data
+      - /var/lib/postgres-data:/var/lib/postgresql/data
     environment:
       POSTGRES_DB: BlogApp
       POSTGRES_USER: admin
